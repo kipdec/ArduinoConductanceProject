@@ -1,4 +1,9 @@
-
+// SloppyTestFile.ino
+// July 18, 2017
+// Kip DeCastro
+//
+// This code is used for demonstrating the functioning of the Arduino's multiplexer
+// board. It is not a finished product. For testing purposes only.
 
 int totalChannels = 16;
 
@@ -39,6 +44,7 @@ void setup() {
 //      break;  // leave the loop!
 //    }
 //   logfile.println("channel, value, volts");
+Serial.println("Channel, Value, Volts, TFunc");
 }
 
 void loop() {
@@ -58,10 +64,11 @@ void loop() {
     digitalWrite(addressD, D);
 
     //Read and print value
-    Serial.print("Channel ");
+   // Serial.print("Channel ");
     Serial.print(i);
-    //logfile.print(i);
-    Serial.print(" value: ");
+    Serial.print(", ");
+   // logfile.print(i);
+    //Serial.print(" value: ");
     x = analogRead(A0);
     if (x < 20){
       x = 0; 
@@ -70,12 +77,14 @@ void loop() {
     //x= x*1000;
     //logfile.print(x);
     Serial.print(x);
-    Serial.print(" volts: ");
+    Serial.print(", ");
+    //Serial.print(" volts: ");
     mV = (.00001*(pow(x,3)) - 0.0251*(pow(x,2)) +17.161*x + 32.738)/1000;
     //Serial.println(x);
     //logfile.print(mV);
     Serial.print(mV);
-    Serial.print(" TimFunc: ");
+    Serial.print(", ");
+    //Serial.print(" TimFunc: ");
     timFunc = ((((0.1* 1024)/analogRead(A0)) - 0.1) / 1000000); 
     Serial.println(timFunc);  
   }

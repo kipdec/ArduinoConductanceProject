@@ -1,4 +1,10 @@
-
+// SloppyTestFileCSV.ino
+// Kip DeCastro
+// July 18, 2017
+//
+// This code is a modified version of sloppyTestFile created to make it easier
+// to import the data into a csv file. This code is for testing the functionality
+// of the ADG406 mux and our Arduino.
 
 int totalChannels = 16;
 

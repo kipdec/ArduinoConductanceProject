@@ -1,0 +1,322 @@
+EESchema Schematic File Version 2
+LIBS:MuxBoard-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:adg406
+LIBS:MuxBoard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Screw_Terminal_1x05 J2
+U 1 1 596D527F
+P 7850 2350
+F 0 "J2" H 7850 2900 50  0000 C TNN
+F 1 "Screw_Terminal_1x05" V 7700 2350 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_5pol" H 7850 1825 50  0001 C CNN
+F 3 "" H 7825 2650 50  0001 C CNN
+	1    7850 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Screw_Terminal_1x05 J3
+U 1 1 596D52E1
+P 7850 3600
+F 0 "J3" H 7850 4150 50  0000 C TNN
+F 1 "Screw_Terminal_1x05" V 7700 3600 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_5pol" H 7850 3075 50  0001 C CNN
+F 3 "" H 7825 3900 50  0001 C CNN
+	1    7850 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Screw_Terminal_1x05 J4
+U 1 1 596D531C
+P 7850 4850
+F 0 "J4" H 7850 5400 50  0000 C TNN
+F 1 "Screw_Terminal_1x05" V 7700 4850 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_5pol" H 7850 4325 50  0001 C CNN
+F 3 "" H 7825 5150 50  0001 C CNN
+	1    7850 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L ADG406-RESCUE-MuxBoard U1
+U 1 1 596D56AF
+P 4900 3800
+F 0 "U1" H 4850 4100 60  0000 C CNN
+F 1 "ADG406" H 4900 3800 60  0000 C CNN
+F 2 "Housings_DIP:DIP-28_W15.24mm" H 4900 3800 60  0001 C CNN
+F 3 "" H 4900 3800 60  0001 C CNN
+	1    4900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1800 4250 3150
+Wire Wire Line
+	4250 3150 4300 3150
+Wire Wire Line
+	6600 1750 6600 4150
+Wire Wire Line
+	6600 1800 4250 1800
+Wire Wire Line
+	6400 3150 5450 3150
+Wire Wire Line
+	6200 1750 6200 2700
+Wire Wire Line
+	5600 1750 5600 2750
+Wire Wire Line
+	5600 2750 7650 2750
+Wire Wire Line
+	5800 1750 5800 4000
+Wire Wire Line
+	5800 4000 7650 4000
+Wire Wire Line
+	6000 1750 6000 5250
+Wire Wire Line
+	6000 5250 7650 5250
+$Comp
+L Screw_Terminal_1x10 J1
+U 1 1 596D5AD3
+P 5700 1550
+F 0 "J1" H 5700 2600 50  0000 C TNN
+F 1 "Screw_Terminal_1x10" V 5550 1550 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_10pol" H 5700 525 50  0001 C CNN
+F 3 "" H 5675 2350 50  0001 C CNN
+	1    5700 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 1750 5400 1850
+Wire Wire Line
+	5400 1850 5500 1850
+Wire Wire Line
+	5500 1850 5500 4250
+Wire Wire Line
+	5500 4250 5450 4250
+Wire Wire Line
+	5200 1750 5200 1900
+Wire Wire Line
+	5200 1900 5550 1900
+Wire Wire Line
+	5550 1900 5550 4350
+Wire Wire Line
+	5550 4350 5450 4350
+Wire Wire Line
+	5000 1750 5000 1950
+Wire Wire Line
+	5000 1950 5650 1950
+Wire Wire Line
+	5650 1950 5650 4450
+Wire Wire Line
+	5650 4450 5450 4450
+Wire Wire Line
+	4800 1750 4200 1750
+Wire Wire Line
+	4200 1750 4200 4450
+Wire Wire Line
+	4200 4450 4300 4450
+Wire Wire Line
+	6600 4150 5900 4150
+Connection ~ 6600 1800
+$Comp
+L R R1
+U 1 1 596D5D48
+P 5750 4150
+F 0 "R1" V 5830 4150 50  0000 C CNN
+F 1 "R" V 5750 4150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5680 4150 50  0001 C CNN
+F 3 "" H 5750 4150 50  0001 C CNN
+	1    5750 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 4150 5450 4150
+Wire Wire Line
+	5450 4050 7600 4050
+Wire Wire Line
+	7600 4050 7600 2550
+Wire Wire Line
+	7600 2550 7650 2550
+Wire Wire Line
+	5450 3950 7550 3950
+Wire Wire Line
+	7550 3950 7550 2350
+Wire Wire Line
+	7550 2350 7650 2350
+Wire Wire Line
+	5450 3850 7500 3850
+Wire Wire Line
+	7500 3850 7500 2150
+Wire Wire Line
+	7500 2150 7650 2150
+Wire Wire Line
+	5450 3750 7450 3750
+Wire Wire Line
+	7450 3750 7450 1950
+Wire Wire Line
+	7450 1950 7650 1950
+Wire Wire Line
+	5450 3650 7400 3650
+Wire Wire Line
+	7400 3650 7400 3800
+Wire Wire Line
+	7400 3800 7650 3800
+Wire Wire Line
+	5450 3550 7400 3550
+Wire Wire Line
+	7400 3550 7400 3600
+Wire Wire Line
+	7400 3600 7650 3600
+Wire Wire Line
+	5450 3450 7650 3450
+Wire Wire Line
+	7650 3450 7650 3400
+Wire Wire Line
+	5450 3350 7400 3350
+Wire Wire Line
+	7400 3350 7400 3200
+Wire Wire Line
+	7400 3200 7650 3200
+Wire Wire Line
+	4300 4150 4250 4150
+Wire Wire Line
+	4250 4150 4250 5050
+Wire Wire Line
+	4250 5050 7650 5050
+Wire Wire Line
+	4300 4050 4150 4050
+Wire Wire Line
+	4150 4050 4150 4850
+Wire Wire Line
+	4150 4850 7650 4850
+Wire Wire Line
+	4300 3950 4050 3950
+Wire Wire Line
+	4050 3950 4050 4650
+Wire Wire Line
+	4050 4650 7650 4650
+Wire Wire Line
+	4300 3850 4000 3850
+Wire Wire Line
+	4000 3850 4000 4550
+Wire Wire Line
+	4000 4550 7650 4550
+Wire Wire Line
+	7650 4550 7650 4450
+$Comp
+L R R2
+U 1 1 596D6150
+P 6400 2550
+F 0 "R2" V 6480 2550 50  0000 C CNN
+F 1 "R" V 6400 2550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6330 2550 50  0001 C CNN
+F 3 "" H 6400 2550 50  0001 C CNN
+	1    6400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1750 6400 2400
+Wire Wire Line
+	6200 2700 6400 2700
+Wire Wire Line
+	6400 2700 6400 3150
+Wire Wire Line
+	4300 4250 4100 4250
+Wire Wire Line
+	4100 4250 4100 4600
+Wire Wire Line
+	4100 4600 6500 4600
+Wire Wire Line
+	6500 4600 6500 2400
+Wire Wire Line
+	6500 2400 6400 2400
+Text Label 5350 1400 0    60   ~ 0
+A
+Text Label 5150 1400 0    60   ~ 0
+B
+Text Label 4950 1400 0    60   ~ 0
+C
+Text Label 4750 1400 0    60   ~ 0
+D
+Text Label 5550 1400 0    60   ~ 0
+D0
+Text Label 5750 1400 0    60   ~ 0
+D1
+Text Label 5950 1400 0    60   ~ 0
+D2
+Text Label 6300 1400 0    60   ~ 0
+GND
+Text Label 6500 1400 0    60   ~ 0
++5V
+Text Label 8000 2800 0    60   ~ 0
+D0
+Text Label 6150 1400 0    60   ~ 0
+A0
+Text Label 7950 4050 0    60   ~ 0
+D1
+Text Label 7950 5300 0    60   ~ 0
+D2
+Text Label 8000 2600 0    60   ~ 0
+S1
+Text Label 8000 2400 0    60   ~ 0
+S2
+Text Label 7950 3850 0    60   ~ 0
+S5
+Text Label 7950 3650 0    60   ~ 0
+S6
+Text Label 7950 3450 0    60   ~ 0
+S7
+Text Label 7950 3250 0    60   ~ 0
+S8
+Text Label 7950 5100 0    60   ~ 0
+S9
+Text Label 7950 4900 0    60   ~ 0
+S10
+Text Label 7950 4700 0    60   ~ 0
+S11
+Text Label 7950 4500 0    60   ~ 0
+S12
+Text Label 8000 2200 0    60   ~ 0
+S3
+Text Label 8000 2000 0    60   ~ 0
+S4
+$EndSCHEMATC
