@@ -1,0 +1,28 @@
+-----------------------------------------------------------
+    Equations relating to the Arduino Ohm Volt Experiment
+-----------------------------------------------------------
+
+Kip DeCastro
+July 18th, 2017
+
+Voltage to Resistance:
+
+V = Voltage ( Volts )
+RV = Resitance ( MOhm ) equation
+
+RV = 0.1828V^2 - 1.7136V + 4.1463
+
+Arduino 5 bit value to Resistance:
+
+B = Arduino 5 value / 1000 	// The reasoning for dividing by 1000 was to make the
+							// visual comparison between RV and RA easier.	
+RA = Resistance ( MOhm ) equation 
+
+RA = 0.8633B^(-1.202)
+
+Arduino 5 bit value to Voltage:
+
+B = Arduino 5 bit value
+VA = Voltage ( Volts )
+
+VA = 1.1742ln(x) - 2.8236
