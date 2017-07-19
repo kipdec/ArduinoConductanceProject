@@ -26,3 +26,10 @@ B = Arduino 5 bit value
 VA = Voltage ( Volts )
 
 VA = 1.1742ln(x) - 2.8236
+
+Tim's Resistance Equation:
+
+B = Arduino 5 bit value
+RT = Resitance (MOhm) equation
+
+RT = ((0.1*1024)/B)-0.1
